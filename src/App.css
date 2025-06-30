@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  white-space: pre-line;
+}
+
+.success {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  white-space: pre-line;
+}
+
+.rotating-item {
+  animation: rotate-continuously 2s linear infinite;
+  transform-origin: center; /* Rotates around the center of the element's bounding box */
+  transform-box: fill-box; /* Important for SVG: makes transform-origin relative to the SVG element itself */
+}
+
+@keyframes rotate-continuously {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
