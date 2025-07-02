@@ -5,7 +5,7 @@ import { disconnectWallet } from "@/utils/disconnectWallet";
 import { formatAddress } from "@/utils/formatAddress";
 import { FaChevronDown } from "react-icons/fa";
 import { useIsMobile } from "@/hooks/useMobile";
-import Logo from "@/assets/logo.png";
+import Logo from "@/assets/monswap.png";
 
 const Header = () => {
   const { account, setAccount, setSigner, networkName, isConnected, setIsConnected, setError } = useContext(AppContext);
@@ -21,8 +21,8 @@ const Header = () => {
     <header className="bg-white shadow-sm py-0 px-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="https://www.dakucrypto.com">
-            <img src={Logo} alt="Logo" className="w-15 h-20" />
+          <a href="https://www.monswap.pro">
+            <img src={Logo} alt="Logo" className="w-25 h-20" />
           </a>
         </div>
 
